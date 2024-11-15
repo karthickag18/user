@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "inter",sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    min-height: 100vh;
+}
+
+.karthi{
+    background-color: rgb(41, 37, 37);
+    color: white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.karthi img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.pro{
+    border: 1px solid white;
+    padding: 3px 7px;
+    border-radius: 3px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.online{
+    background-color: green;
+}
+
+.offline{
+    background-color: red;
+}
+
+.karthi h2{
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.karthi h3{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.karthi p{
+    margin-bottom: 30px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button button{
+    background-color: rgb(28, 28, 180);
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+.button button.outer{
+    background-color: transparent;
+}
+
+.skill{
+    text-align: left;
+}
+
+.skill p{
+    font-size: x-large;
+}
+
+.skill ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill ul li{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
 }
